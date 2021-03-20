@@ -42,6 +42,15 @@ Installation Process:
 sudo apt install i3lock
 ```
 
+
+- [dmenu](https://tools.suckless.org/dmenu/)
+
+Installation Process:
+```bash
+sudo apt install dmenu
+```
+
+
 ### Fonts
 
 - [Cascadia](https://github.com/microsoft/cascadia-code/releases)
