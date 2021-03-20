@@ -108,5 +108,14 @@ Open `arandr` by executing `arandr` from shell.
 ![image](https://user-images.githubusercontent.com/4998915/111871257-f7d24700-89ae-11eb-845c-edc54517ab1c.png)
 
 Configure based on the current scenario and save the config using `Layout` > `Save As`.
+Open the `i3` config and add the content of the `arandr` config, like,
+```bash
 
+-----
+
+exec_always xrandr --output VGA-0 --off --output LVDS --mode 1366x768 --pos 0x1080 --rotate normal --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal
+
+-----
+
+```
 
