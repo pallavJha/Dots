@@ -103,4 +103,10 @@ Open lxappearance and select the theme Matcha Dark Sea
 
 ### Arandr Multi Screen setup and config
 
+Open `arandr` by executing `arandr` from shell.
+
+![image](https://user-images.githubusercontent.com/4998915/111871257-f7d24700-89ae-11eb-845c-edc54517ab1c.png)
+
+Configure based on the current scenario and save the config using `Layout` > `Save As`.
+
 
