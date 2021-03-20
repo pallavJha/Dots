@@ -99,3 +99,8 @@ Open lxappearance and select the icon pack La Capitaine
 Open lxappearance and select the theme Matcha Dark Sea
 
 ![image](https://user-images.githubusercontent.com/4998915/111870471-f272fd80-89aa-11eb-8cc6-493c0b4ba816.png)
+
+
+### Arandr Multi Screen setup and config
+
+
