@@ -204,6 +204,11 @@ assign [class="Thunar"] $ws4
 # Start Thunar on start up
 exec thunar
 
+# Start Firefox on start up
+exec firefox
+
 # xrandr config -- it has been created using arandr
 exec_always xrandr --output VGA-0 --off --output LVDS --mode 1366x768 --pos 0x1080 --rotate normal --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal
 
+# Set up the bare bones Alt + Tab
+bindsym $mod+Tab workspace back_and_forth
