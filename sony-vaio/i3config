@@ -201,11 +201,14 @@ assign [class="Xfce4-terminal"] $ws3
 # Workspace 4 is Thunar
 assign [class="Thunar"] $ws4
 
-# Start Thunar on start up
-exec thunar
-
 # Start Firefox on start up
 exec firefox
+
+# Start Terminal on start up
+exec i3-sensible-terminal
+
+# Start Thunar on start up
+exec thunar
 
 # xrandr config -- it has been created using arandr
 exec_always xrandr --output VGA-0 --off --output LVDS --mode 1366x768 --pos 0x1080 --rotate normal --output HDMI-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal
