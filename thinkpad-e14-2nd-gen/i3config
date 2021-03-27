@@ -171,12 +171,16 @@ bar {
 
 # Binding for locking i3
 bindsym $mod+Shift+x exec i3lock
+
+# Binding for suspending the machine
+# This binding helps to fix the acpi error as well
 bindsym $mod+Shift+s exec --no-startup-id systemctl suspend 
 
 # Pulse Audio and Screen brighness controls were added after installing the following packages
 # sudo apt-get update; sudo apt-get install xbacklight alsa-utils pulseaudio
  
 # Pulse Audio controls
+# Updated the sink from 0 to default sink
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
@@ -197,7 +201,7 @@ assign [class="Firefox"] $ws2
 # Workspace 3 is Terminal
 assign [class="Gnome-terminal"] $ws3
 
-# Workspace 4 is Thunar
+# Workspace 4 is Nautilus 
 assign [class="Nautilus"] $ws4
 
 # Start Firefox on start up
@@ -215,3 +219,6 @@ exec_always xrandr --output eDP --mode 1920x1080 --pos 0x1080 --rotate normal --
 # Set up the bare bones Alt + Tab
 bindsym $mod+Tab workspace back_and_forth
 
+
+# Set up flameshot
+bindsym $mod+Shift+f exec "flameshot gui"
