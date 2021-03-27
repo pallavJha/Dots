@@ -1,6 +1,5 @@
-## Sony Vaio
-This directory contains the settings/config files used in setting up my old Sony Vaio VPCEB46FG in 2021. This machine was bought in 2010, as it is an old machine the
-setup process is little different.
+## Thinkpad E14 2nd Gen
+This directory contains the settings/config files used in setting up the new Thinkpad E14 2nd Gen in March 2021.
 
 Some of the configuration updates may require a reboot.
 
@@ -127,4 +126,9 @@ exec_always xrandr --output VGA-0 --off --output LVDS --mode 1366x768 --pos 0x10
 -----
 
 ```
+
+This is what my basic setup looks like:
+
+![image](https://user-images.githubusercontent.com/4998915/112724912-8446b180-8f3b-11eb-9cbb-7c1fa33f505e.png)
+
 
