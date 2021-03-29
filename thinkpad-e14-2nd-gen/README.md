@@ -129,6 +129,8 @@ exec_always xrandr --output VGA-0 --off --output LVDS --mode 1366x768 --pos 0x10
 
 This is what my basic setup looks like:
 
-![image](https://user-images.githubusercontent.com/4998915/112724912-8446b180-8f3b-11eb-9cbb-7c1fa33f505e.png)
+
+![image](https://user-images.githubusercontent.com/4998915/112746321-a1c35c00-8fcb-11eb-9746-e59ab82813f5.png)
+
 
 
