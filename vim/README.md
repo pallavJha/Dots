@@ -1,6 +1,4 @@
-<p align="center">
-  <h3>✨ For all things Vim ✨</h3>
-</p>
+<h3 align="center">✨ For all things Vim ✨</h3>
 
 #### NERDTree
 
