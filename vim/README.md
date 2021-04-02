@@ -1,4 +1,7 @@
-### For all things Vim ✨
+<p align="center">
+  <h3>✨ For all things Vim ✨</h3>
+</p>
+
 #### NERDTree
 
 ##### Installation Steps
