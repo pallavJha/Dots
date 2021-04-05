@@ -219,6 +219,9 @@ exec_always xrandr --output eDP --mode 1920x1080 --pos 0x1080 --rotate normal --
 
 # Set up the bare bones Alt + Tab
 bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Control+Left workspace prev
+bindsym $mod+Control+Right workspace next
+
 
 # Set up flameshot
 bindsym $mod+Shift+f exec "flameshot gui"
