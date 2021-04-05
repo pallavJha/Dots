@@ -8,7 +8,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nmap <C-n> :NERDTreeToggle<CR>
 
 " Colorscheme
-colorscheme monokai
+colorscheme solarized
+syntax enable
+set background=dark
 
 " Settings
 "  Set it to show Line numbers
