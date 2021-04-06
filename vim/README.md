@@ -26,8 +26,32 @@ mv nerdtree-6.10.9/* ~/.vim/
 
 #### Monokai Theme
 
-This theme has been taken from [here](https://github.com/mom0tomo/dotfiles/blob/master/vim/.vim/colors/monokai.vim). I got the reference to it from [here](https://vimcolors.com/642/monokai/dark).
+The themes are present in the `colors` directory:
+```bash
+~/code/dots/vim $ tree
+.
+├── colors
+│   ├── monokai.vim
+│   └── solarized.vim
+└── README.md
 
-- Theme screenshot
+1 directory, 3 files
+```
+
+To set the theme in vim, for example, `monokai`, update the following config params in `.vimrc`
+
+```vimsscript
+" Colorscheme
+colorscheme solarized 
+syntax enable
+set background=dark
+```
+
+- Monokai theme has been taken from [here](https://github.com/mom0tomo/dotfiles/blob/master/vim/.vim/colors/monokai.vim). I got the reference to it from [here](https://vimcolors.com/642/monokai/dark).
+
+
+- Solarized theme has been taken from [here](https://github.com/altercation/vim-colors-solarized/blob/master/colors/solarized.vim).
+
+##### Theme screenshot
 ![image](https://user-images.githubusercontent.com/4998915/113415172-48e53080-93dc-11eb-9a6a-e4771faa1c73.png)
 
