@@ -1,6 +1,25 @@
 <h3 align="center">✨ For all things Vim ✨</h3>
 
+> Note: Changes being made in this README are already there in the .vimrc file. No need to make it again.
+
+#### [VIM-Pathogen](https://github.com/tpope/vim-pathogen)
+
+Commands to setup `Pathogen`:
+
+```bash
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+```
+
+Then add this to the `.vimrc`:
+
+```vim
+execute pathogen#infect()
+```
+
 #### NERDTree
+
+The installation of NERDTree was not done using pathogen. It was done manually.
 
 ##### Installation Steps
 ```bash
@@ -24,7 +43,59 @@ mv nerdtree-6.10.9/* ~/.vim/
 ![image](https://user-images.githubusercontent.com/4998915/113415153-3cf96e80-93dc-11eb-8e8e-486255b6bdb5.png)
 
 
-#### Monokai Theme
+
+#### (coc.nvim)[https://github.com/neoclide/coc.nvim#quick-start]
+
+This plugin is NodeJS extension host for vim.
+
+##### Installation Steps
+
+```bash
+cd ~/.vim/bundle
+git clone https://github.com/neoclide/coc.nvim.git
+```
+
+That's all. If VIM Pathogen is installed tand configured in the `.vimrc` then it would be picked up.
+`.vimrc` already contains the necessay configuraion required to use it, however, a language server needs to be installed:
+
+In side Normal mode type:
+```vim
+:CocInstall coc-json coc-tsserver
+```
+
+for installing the TS server. More [info](https://github.com/neoclide/coc.nvim#quick-start).
+
+
+##### Shortcuts to remember
+- gd: For navigating to the function defintion
+- gy: For navigating to the type defintion
+- gi: For navigating to the implementation
+- gr: For navigation to the references
+-  K: To get the documemntation
+
+
+#### (CtrlP)[https://github.com/kien/ctrlp.vim]
+
+File finder
+
+##### Installation Steps
+
+
+```bash
+cd ~/.vim/bundle
+git clone https://github.com/kien/ctrlp.vim
+```
+
+That's all. If VIM Pathogen is installed tand configured in the `.vimrc` then it would be picked up. To configure the shortcuts
+add this in the `.vimrc`:
+
+```vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+```
+
+
+#### Themes
 
 The themes are present in the `colors` directory:
 ```bash
