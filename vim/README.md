@@ -1,9 +1,12 @@
-<h3 align="center">✨ For all things Vim ✨</h3>
+<h2 align="center">✨ For all things Vim ✨</h3>
 
 > Note: Changes being made in this README are already there in the .vimrc file. No need to make it again.
 
-#### [VIM-Pathogen](https://github.com/tpope/vim-pathogen)
+### [VIM-Pathogen](https://github.com/tpope/vim-pathogen)
 
+Manages VIM plugins.
+
+#### Installation Steps
 Commands to setup `Pathogen`:
 
 ```bash
@@ -17,11 +20,11 @@ Then add this to the `.vimrc`:
 execute pathogen#infect()
 ```
 
-#### NERDTree
+### [NERDTree](https://github.com/preservim/nerdtree)
 
 The installation of NERDTree was not done using pathogen. It was done manually.
 
-##### Installation Steps
+#### Installation Steps
 ```bash
 mkdir -p ~/.vim/
 cd /tmp/
@@ -29,7 +32,7 @@ curl -L -o nerdTree.6.10.9.zip https://github.com/preservim/nerdtree/archive/ref
 unzip nerdTree.6.10.9.zip
 mv nerdtree-6.10.9/* ~/.vim/
 ```
-##### Shortcuts to remember
+#### Shortcuts to remember
 - Press **o** to open the file in a new buffer or open/close directory.
 - Press **t** to open the file in a new tab.
 - Press **i** to open the file in a new horizontal split.
@@ -38,17 +41,17 @@ mv nerdtree-6.10.9/* ~/.vim/
 - Press **r** to refresh the current directory.
 
 
-##### Snapshots
+#### Snapshots
 - NERDTree Setup
 ![image](https://user-images.githubusercontent.com/4998915/113415153-3cf96e80-93dc-11eb-8e8e-486255b6bdb5.png)
 
 
 
-#### (coc.nvim)[https://github.com/neoclide/coc.nvim#quick-start]
+### [CoC.nvim](https://github.com/neoclide/coc.nvim#quick-start)
 
 This plugin is NodeJS extension host for vim.
 
-##### Installation Steps
+#### Installation Steps
 
 ```bash
 cd ~/.vim/bundle
@@ -65,21 +68,37 @@ In side Normal mode type:
 
 for installing the TS server. More [info](https://github.com/neoclide/coc.nvim#quick-start).
 
+More Links:
+- [benawad/init.vim](https://gist.github.com/benawad/b768f5a5bbd92c8baabd363b7e79786f)
+- [benawad/coc-settings.json](https://gist.github.com/benawad/e187dd887f256a6a002905ec7f22ad76)
 
-##### Shortcuts to remember
+
+#### Shortcuts to remember
 - gd: For navigating to the function defintion
 - gy: For navigating to the type defintion
 - gi: For navigating to the implementation
 - gr: For navigation to the references
 -  K: To get the documemntation
 
+#### Screenshots
+- Code Completetion (Ctrl + Space)
 
-#### (CtrlP)[https://github.com/kien/ctrlp.vim]
+![image](https://user-images.githubusercontent.com/4998915/113676477-5404be80-9671-11eb-9843-5285819ccbd3.png)
+
+- Function References (gd)
+
+![image](https://user-images.githubusercontent.com/4998915/113676598-7f87a900-9671-11eb-9614-6402537c914c.png)
+
+
+- Function Definition (K)
+
+![image](https://user-images.githubusercontent.com/4998915/113676707-a1812b80-9671-11eb-8af4-6768a5da5dfc.png)
+
+### [CtrlP](https://github.com/kien/ctrlp.vim)
 
 File finder
 
-##### Installation Steps
-
+#### Installation Steps
 
 ```bash
 cd ~/.vim/bundle
@@ -94,8 +113,11 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 ```
 
+#### Screenshots
 
-#### Themes
+![image](https://user-images.githubusercontent.com/4998915/113676997-ee650200-9671-11eb-9739-7458f7157fba.png)
+
+### Themes
 
 The themes are present in the `colors` directory:
 ```bash
@@ -123,6 +145,10 @@ set background=dark
 
 - Solarized theme has been taken from [here](https://github.com/altercation/vim-colors-solarized/blob/master/colors/solarized.vim).
 
-##### Theme screenshot
+#### Theme screenshot
 ![image](https://user-images.githubusercontent.com/4998915/113415172-48e53080-93dc-11eb-9a6a-e4771faa1c73.png)
+
+
+### TODOs:
+- Check file exclusion for CtrlP
 
