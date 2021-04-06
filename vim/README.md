@@ -1,8 +1,10 @@
-<h2 lign="center">✨ For all things Vim ✨</h3>
+<h2 align="center">✨ For all things Vim ✨</h3>
 
 > Note: Changes being made in this README are already there in the .vimrc file. No need to make it again.
 
 ### [VIM-Pathogen](https://github.com/tpope/vim-pathogen)
+
+Manages VIM plugins.
 
 #### Installation Steps
 Commands to setup `Pathogen`:
@@ -66,6 +68,11 @@ In side Normal mode type:
 
 for installing the TS server. More [info](https://github.com/neoclide/coc.nvim#quick-start).
 
+More Links:
+- [benawad/init.vim](https://gist.github.com/benawad/b768f5a5bbd92c8baabd363b7e79786f)
+- [benawad/coc-settings.json](https://gist.github.com/benawad/e187dd887f256a6a002905ec7f22ad76)
+
+
 #### Shortcuts to remember
 - gd: For navigating to the function defintion
 - gy: For navigating to the type defintion
@@ -110,7 +117,7 @@ let g:ctrlp_cmd = 'CtrlP'
 
 ![image](https://user-images.githubusercontent.com/4998915/113676997-ee650200-9671-11eb-9739-7458f7157fba.png)
 
-#### Themes
+### Themes
 
 The themes are present in the `colors` directory:
 ```bash
@@ -138,6 +145,10 @@ set background=dark
 
 - Solarized theme has been taken from [here](https://github.com/altercation/vim-colors-solarized/blob/master/colors/solarized.vim).
 
-##### Theme screenshot
+#### Theme screenshot
 ![image](https://user-images.githubusercontent.com/4998915/113415172-48e53080-93dc-11eb-9a6a-e4771faa1c73.png)
+
+
+### TODOs:
+- Check file exclusion for CtrlP
 
