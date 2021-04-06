@@ -40,9 +40,9 @@ The themes are present in the `colors` directory:
 
 To set the theme in vim, for example, `monokai`, update the following config params in `.vimrc`
 
-```vimsscript
+```vim
 " Colorscheme
-colorscheme solarized 
+colorscheme monokai 
 syntax enable
 set background=dark
 ```
