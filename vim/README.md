@@ -44,7 +44,7 @@ mv nerdtree-6.10.9/* ~/.vim/
 
 
 
-#### [coc.nvim][https://github.com/neoclide/coc.nvim#quick-start]
+#### [coc.nvim](https://github.com/neoclide/coc.nvim#quick-start)
 
 This plugin is NodeJS extension host for vim.
 
@@ -74,7 +74,7 @@ for installing the TS server. More [info](https://github.com/neoclide/coc.nvim#q
 -  K: To get the documemntation
 
 
-#### [CtrlP][https://github.com/kien/ctrlp.vim]
+#### [CtrlP](https://github.com/kien/ctrlp.vim)
 
 File finder
 
