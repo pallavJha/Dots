@@ -42,7 +42,7 @@ To set the theme in vim, for example, `monokai`, update the following config par
 
 ```vim
 " Colorscheme
-colorscheme solarized 
+colorscheme monokai 
 syntax enable
 set background=dark
 ```
