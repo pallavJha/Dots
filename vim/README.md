@@ -1,9 +1,10 @@
-<h3 align="center">✨ For all things Vim ✨</h3>
+<h2 lign="center">✨ For all things Vim ✨</h3>
 
 > Note: Changes being made in this README are already there in the .vimrc file. No need to make it again.
 
-#### [VIM-Pathogen](https://github.com/tpope/vim-pathogen)
+### [VIM-Pathogen](https://github.com/tpope/vim-pathogen)
 
+#### Installation Steps
 Commands to setup `Pathogen`:
 
 ```bash
@@ -17,11 +18,11 @@ Then add this to the `.vimrc`:
 execute pathogen#infect()
 ```
 
-#### [NERDTree](https://github.com/preservim/nerdtree)
+### [NERDTree](https://github.com/preservim/nerdtree)
 
 The installation of NERDTree was not done using pathogen. It was done manually.
 
-##### Installation Steps
+#### Installation Steps
 ```bash
 mkdir -p ~/.vim/
 cd /tmp/
@@ -29,7 +30,7 @@ curl -L -o nerdTree.6.10.9.zip https://github.com/preservim/nerdtree/archive/ref
 unzip nerdTree.6.10.9.zip
 mv nerdtree-6.10.9/* ~/.vim/
 ```
-##### Shortcuts to remember
+#### Shortcuts to remember
 - Press **o** to open the file in a new buffer or open/close directory.
 - Press **t** to open the file in a new tab.
 - Press **i** to open the file in a new horizontal split.
@@ -38,17 +39,17 @@ mv nerdtree-6.10.9/* ~/.vim/
 - Press **r** to refresh the current directory.
 
 
-##### Snapshots
+#### Snapshots
 - NERDTree Setup
 ![image](https://user-images.githubusercontent.com/4998915/113415153-3cf96e80-93dc-11eb-8e8e-486255b6bdb5.png)
 
 
 
-#### [coc.nvim](https://github.com/neoclide/coc.nvim#quick-start)
+### [CoC.nvim](https://github.com/neoclide/coc.nvim#quick-start)
 
 This plugin is NodeJS extension host for vim.
 
-##### Installation Steps
+#### Installation Steps
 
 ```bash
 cd ~/.vim/bundle
@@ -65,14 +66,14 @@ In side Normal mode type:
 
 for installing the TS server. More [info](https://github.com/neoclide/coc.nvim#quick-start).
 
-##### Shortcuts to remember
+#### Shortcuts to remember
 - gd: For navigating to the function defintion
 - gy: For navigating to the type defintion
 - gi: For navigating to the implementation
 - gr: For navigation to the references
 -  K: To get the documemntation
 
-##### Screenshots
+#### Screenshots
 - Code Completetion (Ctrl + Space)
 
 ![image](https://user-images.githubusercontent.com/4998915/113676477-5404be80-9671-11eb-9843-5285819ccbd3.png)
@@ -86,17 +87,11 @@ for installing the TS server. More [info](https://github.com/neoclide/coc.nvim#q
 
 ![image](https://user-images.githubusercontent.com/4998915/113676707-a1812b80-9671-11eb-8af4-6768a5da5dfc.png)
 
-
-
-
-
-
-#### [CtrlP](https://github.com/kien/ctrlp.vim)
+### [CtrlP](https://github.com/kien/ctrlp.vim)
 
 File finder
 
-##### Installation Steps
-
+#### Installation Steps
 
 ```bash
 cd ~/.vim/bundle
@@ -111,11 +106,9 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 ```
 
-##### Screenshots
+#### Screenshots
 
 ![image](https://user-images.githubusercontent.com/4998915/113676997-ee650200-9671-11eb-9739-7458f7157fba.png)
-
-
 
 #### Themes
 
