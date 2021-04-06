@@ -65,13 +65,30 @@ In side Normal mode type:
 
 for installing the TS server. More [info](https://github.com/neoclide/coc.nvim#quick-start).
 
-
 ##### Shortcuts to remember
 - gd: For navigating to the function defintion
 - gy: For navigating to the type defintion
 - gi: For navigating to the implementation
 - gr: For navigation to the references
 -  K: To get the documemntation
+
+##### Screenshots
+- Code Completetion (Ctrl + Space)
+
+![image](https://user-images.githubusercontent.com/4998915/113676477-5404be80-9671-11eb-9843-5285819ccbd3.png)
+
+- Function References (gd)
+
+![image](https://user-images.githubusercontent.com/4998915/113676598-7f87a900-9671-11eb-9614-6402537c914c.png)
+
+
+- Function Definition (K)
+
+![image](https://user-images.githubusercontent.com/4998915/113676707-a1812b80-9671-11eb-8af4-6768a5da5dfc.png)
+
+
+
+
 
 
 #### [CtrlP](https://github.com/kien/ctrlp.vim)
@@ -93,6 +110,11 @@ add this in the `.vimrc`:
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 ```
+
+##### Screenshots
+
+![image](https://user-images.githubusercontent.com/4998915/113676997-ee650200-9671-11eb-9739-7458f7157fba.png)
+
 
 
 #### Themes
