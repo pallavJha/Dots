@@ -1,5 +1,9 @@
-" Start NERDTree on enter 
-autocmd vimenter * NERDTree
+" To get the full path you can add this command
+" https://unix.stackexchange.com/a/111560/176830
+set statusline+=%F
+
+" Uncomment the following line to start NERDTree on enter 
+" autocmd vimenter * NERDTree
 
 " Show hiddle files in NERDTree
 let NERDTreeShowHidden=1
