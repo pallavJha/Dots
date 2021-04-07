@@ -1,8 +1,26 @@
-## Dots
-### .files and config files for i3, vim and whatnot!
+<h2 align="center">
+  Dots
+  <br/>
+</h2>
 
-This repository contains the dot files for various plugins or systems that I use. The directory name is the name of the machine on which the dot file is deployed.
+<h3 align="center"> .files and config files for i3, vim and whatnot! </h3>
 
-1. [Sony Vaio i3](/sony-vaio)
-2. [Thinkpad e14 2nd Gen i3](/thinkpad-e14-2nd-gen)
-3. [✨ For all things Vim ✨](/vim)
+<p align="center">This repository contains the dot files for various plugins or systems that I use. The directory name is the name of the machine on which the dot file is deployed.</span>
+
+<h4 align="center">
+  <img height="25" witdth="25" src="https://user-images.githubusercontent.com/4998915/113819701-84f6f900-972e-11eb-921c-d8e99fad6006.png"/>
+  <br/>
+<a href="/sony-vaio">Sony Vaio</a>
+</h4>
+
+<h4 align="center">
+<img height="25" width="25" src="https://user-images.githubusercontent.com/4998915/113819076-a86d7400-972d-11eb-95e2-c54fe124382f.png"/>
+<br/>
+<a href="/thinkpad-e14-2nd-gen">Thinkpad e14 2nd Gen</a>
+</h4>
+
+<h4 align="center">
+<img height="25 width="25" src="https://user-images.githubusercontent.com/4998915/113819343-069a5700-972e-11eb-8120-b41c308da95b.png"/>
+<br/>
+<a href="/vim">For all things Vim</a>
+</h4>
