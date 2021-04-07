@@ -3,6 +3,14 @@
 
 This repository contains the dot files for various plugins or systems that I use. The directory name is the name of the machine on which the dot file is deployed.
 
-1. [Sony Vaio i3](/sony-vaio)
-2. [Thinkpad e14 2nd Gen i3](/thinkpad-e14-2nd-gen)
-3. [✨ For all things Vim ✨](/vim)
+<h4 align="center">
+<a align="center" href="/sony-vaio">Sony Vaio</a>
+</h4>
+
+<h4 align="center">
+<a align="center" href="/thinkpad-e14-2nd-gen">Thinkpad e14 2nd Gen i3</a>
+</h4>
+
+<h4 align="center">
+<a align="center" href="/vim">✨ For all things Vim ✨</a>
+</h4>
