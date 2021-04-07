@@ -16,7 +16,7 @@
 <h4 align="center">
 <img height="25" width="25" src="https://user-images.githubusercontent.com/4998915/113819076-a86d7400-972d-11eb-95e2-c54fe124382f.png"/>
 <br/>
-<a href="/thinkpad-e14-2nd-gen">Thinkpad e14 2nd Gen i3</a>
+<a href="/thinkpad-e14-2nd-gen">Thinkpad e14 2nd Gen</a>
 </h4>
 
 <h4 align="center">
