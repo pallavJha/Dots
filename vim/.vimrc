@@ -17,7 +17,7 @@ nmap <C-m> :NERDTreeFind<CR>
 
 
 " Colorscheme
-colorscheme solarized 
+colorscheme darcula 
 syntax enable
 set background=dark
 
@@ -221,3 +221,8 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " Enabling the mouse support
 set mouse=a
+
+" Enable folding the functions
+set foldmethod=syntax
+set foldlevel=5
+set foldclose=all
