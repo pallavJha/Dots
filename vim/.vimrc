@@ -226,3 +226,6 @@ set mouse=a
 set foldmethod=syntax
 set foldlevel=5
 set foldclose=all
+
+" Enable copy directly to system clipboard
+set clipboard=unnamedplus
