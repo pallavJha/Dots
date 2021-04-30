@@ -1,5 +1,8 @@
 # This script will be just added in the default ~/.bashrc already present
 
+# For add the name of the git branch after the PS1
+# Bash looks like:
+#   waterbottle@ubuntu-20-04-lts:~/code/wow-git-repo (add-branch-in-bash)
 git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
@@ -9,3 +12,7 @@ if [ "$color_prompt" = yes ]; then
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\n\$ '
 fi
+
+
+# Combine the history of all the open bash shell
+export PROMPT_COMMAND='history -a'
