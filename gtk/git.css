@@ -1,0 +1,50 @@
+/* The location of this file is ~/.config/gtk-3.0/gtk.css
+ *
+ */
+
+/* CSS to decrease the title bar size in gnome
+ * Copied from https://unix.stackexchange.com/a/291040/176830
+ */
+
+
+headerbar entry,
+headerbar spinbutton,
+headerbar button,
+headerbar separator {
+    margin-top: 0px; /* same as headerbar side padding for nicer proportions */
+    margin-bottom: 0px;
+}
+
+headerbar {
+    min-height: 24px;
+    padding-left: 2px; /* same as childrens vertical margins for nicer proportions */
+    padding-right: 2px;
+    margin: 0px; /* same as headerbar side padding for nicer proportions */
+    padding: 0px;
+}
+
+
+/* Decrease the tabs bar height in gnome-terminal
+ * See:
+ * https://stackoverflow.com/questions/36869701/decrease-the-tabs-bar-height-in-gnome-terminal
+ *
+ * Copied from https://stackoverflow.com/a/41680096/2422530
+ *
+ */
+terminal-window notebook > header.top button {
+    padding: 0 0 0 0;
+    background-image: none;
+    border: 0;
+    margin-right: 10px;
+}
+terminal-window notebook > header.top > tabs > tab {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size:2px !important;
+}
+terminal-window notebook > header.top > tabs > tab label {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    content: "Not Shown";
+    font-size:2px !important;
+}
