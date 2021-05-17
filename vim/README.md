@@ -144,9 +144,14 @@ syntax enable
 set background=dark
 ```
 
-- Monokai theme has been copied from [here](https://github.com/mom0tomo/dotfiles/blob/master/vim/.vim/colors/monokai.vim). I got the reference to it from [here](https://vimcolors.com/642/monokai/dark).
-- Solarized theme has been copied from [here](https://github.com/altercation/vim-colors-solarized/blob/master/colors/solarized.vim).
-- Apprentice theme has been copied from here [here](https://github.com/romainl/Apprentice).
+### Favorite Themes
+
+|#|Name|Source|Reference|
+|-|----|------|---------|
+|1|Monokai|[→](https://github.com/mom0tomo/dotfiles/blob/master/vim/.vim/colors/monokai.vim)|[→](https://vimcolors.com/642/monokai/dark)|
+|2|Solarized|[→](https://github.com/altercation/vim-colors-solarized/blob/master/colors/solarized.vim)| |
+|3|Apprentice|[→](https://github.com/romainl/Apprentice)|[→](https://github.com/romainl/vim-rnb)|
+
 
 #### Theme screenshot
 ![image](https://user-images.githubusercontent.com/4998915/113415172-48e53080-93dc-11eb-9a6a-e4771faa1c73.png)
