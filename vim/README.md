@@ -29,6 +29,7 @@ execute pathogen#infect()
 The installation of NERDTree was not done using pathogen. It was done manually.
 
 #### Installation Steps
+##### Without Pathogen
 ```bash
 mkdir -p ~/.vim/
 cd /tmp/
@@ -36,6 +37,11 @@ curl -L -o nerdTree.6.10.9.zip https://github.com/preservim/nerdtree/archive/ref
 unzip nerdTree.6.10.9.zip
 mv nerdtree-6.10.9/* ~/.vim/
 ```
+##### With Pathogen
+```bash
+git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree
+```           
+              
 #### Shortcuts to remember
 - Press **o** to open the file in a new buffer or open/close directory.
 - Press **t** to open the file in a new tab.
