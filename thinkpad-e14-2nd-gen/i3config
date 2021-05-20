@@ -225,3 +225,8 @@ bindsym $mod+Control+Right workspace next
 
 # Set up flameshot
 bindsym $mod+Shift+f exec "flameshot gui"
+
+# Removes the title bar
+# https://www.reddit.com/r/i3wm/comments/7yh3zj/is_there_a_way_to_completely_disable_title_bars/
+for_window [class="^.*"] border pixel 1
+
