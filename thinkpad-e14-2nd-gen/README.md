@@ -1,5 +1,5 @@
 ## Thinkpad E14 2nd Gen
-This directory contains the settings/config files used in setting up the new Thinkpad E14 2nd Gen in March 2021.
+This directory contains the settings/config files used in setting up the new Thinkpad E14 2nd Gen on March 2021.
 
 Some of the configuration updates may require a reboot.
 
