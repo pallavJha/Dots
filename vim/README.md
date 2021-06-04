@@ -157,6 +157,7 @@ set background=dark
 |1|Monokai|[→](https://github.com/mom0tomo/dotfiles/blob/master/vim/.vim/colors/monokai.vim)|[→](https://vimcolors.com/642/monokai/dark)|
 |2|Solarized|[→](https://github.com/altercation/vim-colors-solarized/blob/master/colors/solarized.vim)| |
 |3|Apprentice|[→](https://github.com/romainl/Apprentice)|[→](https://github.com/romainl/vim-rnb)|
+|4|Vim Monokai - Based on Sublime|[→](https://github.com/crusoexia/vim-monokai)||
 
 
 #### Theme screenshot
