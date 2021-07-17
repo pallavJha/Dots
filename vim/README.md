@@ -6,6 +6,17 @@
 
 > Note: Changes being made in this README are already there in the .vimrc file. No need to make it again.
 
+ToC:
+- [VIM Pathogen](#vim-pathogen)
+- [NERDTree](#nerdtree)
+- [CoC.nvim](#cocnvim)
+- [CtrlP](#ctrlp)
+- [Themes](#themes)
+    [Favorite Themes](#favorite-themes)
+- [Statusline Configuration](#statusline-configuration)
+- [Autocomplete without plugin](#autocomplete-without-plugin)
+- [# TODOs:](#todos)
+              
 ### [VIM-Pathogen](https://github.com/tpope/vim-pathogen)
 
 Manages VIM plugins.
@@ -163,7 +174,16 @@ set background=dark
 #### Theme screenshot
 ![image](https://user-images.githubusercontent.com/4998915/113415172-48e53080-93dc-11eb-9a6a-e4771faa1c73.png)
 
+### Statuline Configuration
+Screenshot:
+     ![image](https://user-images.githubusercontent.com/4998915/126040385-5a028020-1c97-41fd-b106-64bce14ae5a6.png)
 
+### Autocomplete without plugin
+Screenshot:
+     ![image](https://user-images.githubusercontent.com/4998915/126040454-d06c069c-1a9d-4462-b934-2787cd214d8c.png)
+
+
+     
 ### TODOs:
 - Check file exclusion for CtrlP
 
