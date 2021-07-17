@@ -12,7 +12,7 @@
 - [CoC.nvim](#cocnvim)
 - [CtrlP](#ctrlp)
 - [Themes](#themes)
-    [Favorite Themes](#favorite-themes)
+  - [Favorite Themes](#favorite-themes)
 - [Statusline Configuration](#statusline-configuration)
 - [Autocomplete without plugin](#autocomplete-without-plugin)
 - [# TODOs:](#todos)
