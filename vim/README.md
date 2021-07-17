@@ -174,13 +174,15 @@ set background=dark
 #### Theme screenshot
 ![image](https://user-images.githubusercontent.com/4998915/113415172-48e53080-93dc-11eb-9a6a-e4771faa1c73.png)
 
-### Statuline Configuration
+### Statusline Configuration
 Screenshot:
-     ![image](https://user-images.githubusercontent.com/4998915/126040385-5a028020-1c97-41fd-b106-64bce14ae5a6.png)
+
+![image](https://user-images.githubusercontent.com/4998915/126040385-5a028020-1c97-41fd-b106-64bce14ae5a6.png)
 
 ### Autocomplete without plugin
 Screenshot:
-     ![image](https://user-images.githubusercontent.com/4998915/126040454-d06c069c-1a9d-4462-b934-2787cd214d8c.png)
+     
+![image](https://user-images.githubusercontent.com/4998915/126040454-d06c069c-1a9d-4462-b934-2787cd214d8c.png)
 
 
      
