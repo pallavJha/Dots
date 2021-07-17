@@ -2,11 +2,11 @@
 <img height="25 width="25" src="https://user-images.githubusercontent.com/4998915/113819343-069a5700-972e-11eb-8120-b41c308da95b.png"/>
 <br/>
 <a href="/vim">For all things Vim</a>
-</h4>
+</h2>
 
 > Note: Changes being made in this README are already there in the .vimrc file. No need to make it again.
 
-ToC:
+### Table of Contents:
 - [VIM Pathogen](#vim-pathogen)
 - [NERDTree](#nerdtree)
 - [CoC.nvim](#cocnvim)
