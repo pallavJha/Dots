@@ -222,6 +222,8 @@ bindsym $mod+Tab workspace back_and_forth
 bindsym $mod+Control+Left workspace prev
 bindsym $mod+Control+Right workspace next
 
+# Compton for transition effects
+exec compton -b -f --fade-delta=5
 
 # Set up flameshot
 bindsym $mod+Shift+f exec "flameshot gui"
