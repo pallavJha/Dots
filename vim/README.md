@@ -9,7 +9,7 @@
 ### Table of Contents:
 - [VIM Pathogen](#vim-pathogen)
 - [NERDTree](#nerdtree)
-- [CoC.nvim](#cocnvim)
+- [natebosch/vim-lsc](#nateboschvim-lsc)
 - [CtrlP](#ctrlp)
 - [Themes](#themes)
   - [Favorite Themes](#favorite-themes)
