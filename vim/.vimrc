@@ -14,8 +14,8 @@ let NERDTreeShowHidden=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Map `Ctrl + N` for NERDTree
-nmap <C-n> :NERDTreeToggle<CR>
-nmap <C-q> :NERDTreeFind<CR>
+nmap <C-n><C-n> :NERDTreeToggle<CR>
+nmap <C-n><C-m> :NERDTreeFind<CR>
 
 
 " Colorscheme
