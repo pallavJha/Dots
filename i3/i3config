@@ -8,7 +8,7 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
+# For windows use Mod4
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -95,10 +95,10 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1. Waterbottle"
-set $ws2 "2. Firefox"
-set $ws3 "3. Terminal"
-set $ws4 "4. Nautilus"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -182,40 +182,40 @@ bindsym $mod+Shift+s exec --no-startup-id systemctl suspend
  
 # Pulse Audio controls
 # Updated the sink from 0 to default sink
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 # Screen brightness is configured using https://github.com/jappeace/brightnessctl 
 # Update the config by adding the correct path for `brightness` directory
 #
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec brightness+ # increase screen brightness
-bindsym XF86MonBrightnessDown exec brightness- # decrease screen brightness
+#bindsym XF86MonBrightnessUp exec brightness+ # increase screen brightness
+#bindsym XF86MonBrightnessDown exec brightness- # decrease screen brightness
 # In case the previous bind fails then uncomment the following lines
 #   bindsym $mod+F8 exec brightness-
 #   bindsym $mod+F9 exec brightness+
 
 # Workspace 2 is Firefox
-assign [class="Firefox"] $ws2
+#assign [class="Firefox"] $ws2
 
 # Workspace 3 is Terminal
-assign [class="Gnome-terminal"] $ws3
+#assign [class="Gnome-terminal"] $ws3
 
 # Workspace 4 is Nautilus 
-assign [class="Nautilus"] $ws4
+#assign [class="Nautilus"] $ws4
 
 # Start Firefox on start up
-exec firefox
+#exec firefox
 
 # Start Terminal on start up
-exec i3-sensible-terminal
+#exec i3-sensible-terminal
 
 # Start Thunar on start up
-exec nautilus 
+#exec nautilus 
 
 # xrandr config -- it has been created using arandr
-exec_always xrandr --output eDP --mode 1920x1080 --pos 0x1080 --rotate normal --output HDMI-A-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DisplayPort-0 --off 
+#exec_always xrandr --output eDP --mode 1920x1080 --pos 0x1080 --rotate normal --output HDMI-A-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DisplayPort-0 --off 
 
 # Set up the bare bones Alt + Tab
 bindsym $mod+Tab workspace back_and_forth
@@ -223,10 +223,10 @@ bindsym $mod+Control+Left workspace prev
 bindsym $mod+Control+Right workspace next
 
 # Compton for transition effects
-exec compton -b -f --fade-delta=5
+exec compton -b -f --fade-delta=7
 
 # Set up flameshot
-bindsym $mod+Shift+f exec "flameshot gui"
+#bindsym $mod+Shift+f exec "flameshot gui"
 
 # Removes the title bar
 # https://www.reddit.com/r/i3wm/comments/7yh3zj/is_there_a_way_to_completely_disable_title_bars/
