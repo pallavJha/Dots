@@ -14,8 +14,6 @@
 - [Themes](#themes)
   - [Favorite Themes](#favorite-themes)
 - [Statusline Configuration](#statusline-configuration)
-- [Autocomplete without plugin](#autocomplete-without-plugin)
-- [# TODOs:](#todos)
               
 ### [VIM-Pathogen](https://github.com/tpope/vim-pathogen)
 
