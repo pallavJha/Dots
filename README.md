@@ -21,7 +21,7 @@
       </td>
       <td width=200px>
         <h4 align="center">
-          <a href="/thinkpad-e14-2nd-gen">
+          <a href="/i3">
             <img height="25" width="25" src="https://user-images.githubusercontent.com/4998915/113819076-a86d7400-972d-11eb-95e2-c54fe124382f.png"/>
             <br/>
             Thinkpad e14 2nd Gen
@@ -58,7 +58,7 @@
       </td>
       <td width=200px>
         <h4 align="center">
-          <a href="/thinkpad-e14-2nd-gen">
+          <a href="/i3">
             <img height="25 width="25" src="https://user-images.githubusercontent.com/4998915/117256690-9e43b000-ae68-11eb-87e5-6a336a5be5bc.png"/>
             <br/>
             i3
