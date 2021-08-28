@@ -64,11 +64,10 @@ git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree
 
 #### Snapshots
 - NERDTree Setup
-![image](https://user-images.githubusercontent.com/4998915/113415153-3cf96e80-93dc-11eb-8e8e-486255b6bdb5.png)
+![image](https://user-images.githubusercontent.com/4998915/131223075-3d882521-7360-4acd-b2dd-ac29e20e253a.png)
 
 
-
-### [CoC.nvim](https://github.com/neoclide/coc.nvim#quick-start)
+### [natebosch/vim-lsc](https://github.com/natebosch/vim-lsc)
 
 This plugin is NodeJS extension host for vim.
 
@@ -76,44 +75,58 @@ This plugin is NodeJS extension host for vim.
 
 ```bash
 cd ~/.vim/bundle
-git clone https://github.com/neoclide/coc.nvim.git
+git clone https://github.com/natebosch/vim-lsc
 ```
 
-That's all. If VIM Pathogen is installed tand configured in the `.vimrc` then it would be picked up.
+That's all. If VIM Pathogen is installed and configured in the `.vimrc` then it would be picked up.
 `.vimrc` already contains the necessay configuraion required to use it, however, a language server needs to be installed:
 
-In side Normal mode type:
+#### Configuring LSP for Go
+- Install gopls
+```bash
+$ GO111MODULE=on go get golang.org/x/tools/gopls@latest
+```
+- Update `.vimrc` to use `gopls` for Go files
 ```vim
-:CocInstall coc-json coc-tsserver
+let g:lsc_server_commands = {'go': 'gopls'}
 ```
 
-for installing the TS server. More [info](https://github.com/neoclide/coc.nvim#quick-start).
-
-More Links:
-- [benawad/init.vim](https://gist.github.com/benawad/b768f5a5bbd92c8baabd363b7e79786f)
-- [benawad/coc-settings.json](https://gist.github.com/benawad/e187dd887f256a6a002905ec7f22ad76)
-
-
+- Update `.vimrc` to configure `vim-lsc`
+```vim
+" Complete default mappings are:
+let g:lsc_auto_map = {
+    \ 'GoToDefinition': 'gd',
+    \ 'GoToDefinitionSplit': ['<C-W>]', '<C-W><C-]>'],
+    \ 'FindReferences': 'gr',
+    \ 'NextReference': 'g<C-n>',
+    \ 'PreviousReference': 'g<C-p>',
+    \ 'FindImplementations': 'gi',
+    \ 'FindCodeActions': 'ga',
+    \ 'Rename': 'gR',
+    \ 'ShowHover': v:true,
+    \ 'DocumentSymbol': 'go',
+    \ 'WorkspaceSymbol': 'gS',
+    \ 'SignatureHelp': 'gm',
+    \ 'Completion': 'completefunc',
+    \}              
+```
 #### Shortcuts to remember
 - gd: For navigating to the function defintion
-- gy: For navigating to the type defintion
 - gi: For navigating to the implementation
 - gr: For navigation to the references
 -  K: To get the documemntation
 
 #### Screenshots
-- Code Completetion (Ctrl + Space)
+- Code Completetion
 
-![image](https://user-images.githubusercontent.com/4998915/113676477-5404be80-9671-11eb-9843-5285819ccbd3.png)
+![image](https://user-images.githubusercontent.com/4998915/131223267-97028741-d13f-454a-a17b-39f1a5542be2.png)
 
-- Function References (gd)
-
-![image](https://user-images.githubusercontent.com/4998915/113676598-7f87a900-9671-11eb-9614-6402537c914c.png)
-
+- Function References (gr)
+![image](https://user-images.githubusercontent.com/4998915/131223281-a787c0a0-8619-441c-b0ca-50c34ef61b7f.png)
 
 - Function Definition (K)
 
-![image](https://user-images.githubusercontent.com/4998915/113676707-a1812b80-9671-11eb-8af4-6768a5da5dfc.png)
+![image](https://user-images.githubusercontent.com/4998915/131223297-787e8277-4674-4976-b2a4-657d8b16291e.png)
 
 ### [CtrlP](https://github.com/kien/ctrlp.vim)
 
@@ -178,14 +191,4 @@ set background=dark
 Screenshot:
 
 ![image](https://user-images.githubusercontent.com/4998915/126040385-5a028020-1c97-41fd-b106-64bce14ae5a6.png)
-
-### Autocomplete without plugin
-Screenshot:
-     
-![image](https://user-images.githubusercontent.com/4998915/126040454-d06c069c-1a9d-4462-b934-2787cd214d8c.png)
-
-
-     
-### TODOs:
-- Check file exclusion for CtrlP
 
