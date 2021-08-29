@@ -232,3 +232,5 @@ exec compton -b -f --fade-delta=7
 # https://www.reddit.com/r/i3wm/comments/7yh3zj/is_there_a_way_to_completely_disable_title_bars/
 for_window [class="^.*"] border pixel 1
 
+# Setting up wallpapers using Feh
+exec_always feh --randomize --bg-fill /home/waterbottle/Pictures/wallpapers/*
