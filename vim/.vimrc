@@ -166,3 +166,15 @@ let g:lsc_auto_map = {
     \ 'SignatureHelp': 'gm',
     \ 'Completion': 'completefunc',
     \}
+    
+    
+" Settings for Code format
+" https://github.com/google/vim-codefmt#autoformatting
+" https://stackoverflow.com/a/40275194/2422530
+" NOTE: will installation of the required dependencies
+autocmd FileType rust setlocal equalprg=rustfmt
+autocmd FileType go setlocal equalprg=gofmt
+
+" Setting the formatting for svelte to be same as html
+au! BufNewFile,BufRead *.svelte set ft=html
+    
