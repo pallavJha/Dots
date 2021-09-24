@@ -1,0 +1,13 @@
+{
+	"color_scheme": "auto",
+	"theme": "Adaptive.sublime-theme",
+	"font_face": "Cascadia Codesss",
+	"font_size": 12,
+	"dark_theme": "Adaptive.sublime-theme",
+	"light_theme": "Default Dark.sublime-theme",
+	
+	"draw_centered": true,
+	"wrap_width": 100,
+	"word_wrap": true,
+	"scroll_past_end": true
+}
