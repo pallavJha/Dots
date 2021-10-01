@@ -83,7 +83,10 @@ set mouse=a
 
 " Enable folding the functions
 set foldmethod=syntax
+let javaScript_fold=1
+set foldcolumn=0
 set foldlevel=5
+set foldlevelstart=8
 set foldclose=all
 
 " Enable copy directly to system clipboard
