@@ -52,15 +52,6 @@ mv nerdtree-6.10.9/* ~/.vim/
 git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree
 ```           
               
-#### Shortcuts to remember
-- Press **o** to open the file in a new buffer or open/close directory.
-- Press **t** to open the file in a new tab.
-- Press **i** to open the file in a new horizontal split.
-- Press **s** to open the file in a new vertical split.
-- Press **p** to go to parent directory.
-- Press **r** to refresh the current directory.
-
-
 #### Snapshots
 - NERDTree Setup
 ![image](https://user-images.githubusercontent.com/4998915/131223075-3d882521-7360-4acd-b2dd-ac29e20e253a.png)
@@ -193,9 +184,17 @@ Screenshot:
   
 ### Shortcuts to Remember
 - <kbd>:term</kbd> For terminal
-- <kbd>C-\</kbd> then <kbd>C-n</kbd> For normal mode in terminal  
-- <kbd>C-w<kbd> then <kbd>H, J, K, L<kbd> to the current split
-- <kbd>:vsp<kbd> for vertical split
-- <kbd>g<kbd> then <kbd>T<kbd> or <kbd>t<kbd> for tab navigation
+- <kbd>C-\\</kbd> then <kbd>C-n</kbd> For normal mode in terminal, <kbd>i</kbd> to go back to Terminal mode
+- <kbd>C-w</kbd> then <kbd>H, J, K, L</kbd> to move the current split
+- <kbd>:vsp</kbd> for vertical split
+- <kbd>g</kbd> then <kbd>T</kbd> or <kbd>t</kbd> for tab navigation
 - <kbd>m</kbd> on an entry in NERDTree list to get the options for actions
+
+#### :NERDTree shortcuts
+- Press **o** to open the file in a new buffer or open/close directory.
+- Press **t** to open the file in a new tab.
+- Press **i** to open the file in a new horizontal split.
+- Press **s** to open the file in a new vertical split.
+- Press **p** to go to parent directory.
+- Press **r** to refresh the current directory.
 
