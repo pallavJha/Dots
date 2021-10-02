@@ -100,7 +100,7 @@ let g:lsc_auto_map = {
     \ 'Completion': 'completefunc',
     \}              
 ```
-#### Shortcuts to remember
+#### Shortcuts
 - gd: For navigating to the function defintion
 - gi: For navigating to the implementation
 - gr: For navigation to the references
