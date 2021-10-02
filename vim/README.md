@@ -14,6 +14,7 @@
 - [Themes](#themes)
   - [Favorite Themes](#favorite-themes)
 - [Statusline Configuration](#statusline-configuration)
+- [Shortcuts to remember](#shortcuts-to-remember)              
               
 ### [VIM-Pathogen](https://github.com/tpope/vim-pathogen)
 
@@ -189,4 +190,12 @@ set background=dark
 Screenshot:
 
 ![image](https://user-images.githubusercontent.com/4998915/126040385-5a028020-1c97-41fd-b106-64bce14ae5a6.png)
+  
+### Shortcuts to Remember
+- <kbd>:term</kbd> For terminal
+- <kbd>C-\</kbd> then <kbd>C-n</kbd> For normal mode in terminal  
+- <kbd>C-w<kbd> then <kbd>H, J, K, L<kbd> to the current split
+- <kbd>:vsp<kbd> for vertical split
+- <kbd>g<kbd> then <kbd>T<kbd> or <kbd>t<kbd> for tab navigation
+- <kbd>m</kbd> on an entry in NERDTree list to get the options for actions
 
