@@ -125,7 +125,10 @@ hi User8 guifg=#ffffff  guibg=#5b7fbb
 hi User9 guifg=#ffffff  guibg=#810085
 hi User0 guifg=#ffffff  guibg=#094afe
 
-
+" Status line colors for a Terminal
+" https://vi.stackexchange.com/a/15614
+hi StatusLineTerm ctermbg=black ctermfg=green guibg=darkred guifg=black                                               
+hi StatusLineTermNC ctermbg=black ctermfg=black guibg=black guifg=black
 
 " Autocompleting without any plugins
 " Source -> https://www.youtube.com/watch?v=2f8h45YR494
