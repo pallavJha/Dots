@@ -146,10 +146,11 @@ inoremap <expr> <CR> pumvisible() ? "<C-y>" :"<CR>"
 
 " Settings for tabline.vim
 " https://github.com/mkitt/tabline.vim
-" Found here -> https://superuser.com/a/1203482/686983
+" Found here -> https://github.com/drmingdrmer/vim-tabbar
+" Previously using https://superuser.com/a/1203482/686983
 hi TabLine      ctermfg=Green  ctermbg=Black     cterm=NONE
-hi TabLineFill  ctermfg=Green  ctermbg=Black     cterm=NONE
-hi TabLineSel   ctermfg=White  ctermbg=Blue      cterm=NONE
+hi TabLineFill  ctermfg=Grey   ctermbg=Black     cterm=NONE
+hi TabLineSel   ctermfg=Green  ctermbg=Black     cterm=NONE
 
 
 
