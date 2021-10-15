@@ -172,6 +172,7 @@ set background=dark
 |2|Solarized|[→](https://github.com/altercation/vim-colors-solarized/blob/master/colors/solarized.vim)| |
 |3|Apprentice|[→](https://github.com/romainl/Apprentice)|[→](https://github.com/romainl/vim-rnb)|
 |4|Vim Monokai - Based on Sublime|[→](https://github.com/crusoexia/vim-monokai)||
+|5|Photon|[→](https://github.com/axvr/photon.vim)||
 
 
 #### Theme screenshot
