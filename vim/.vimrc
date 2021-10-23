@@ -26,6 +26,8 @@ set background=dark
 " Settings
 "  Set it to show Line numbers
 se nu
+set incsearch
+set hlsearch
 set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<,eol:¬
 set shiftwidth=2
 set expandtab
