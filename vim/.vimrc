@@ -184,6 +184,10 @@ let g:lsc_auto_map = {
 autocmd FileType rust setlocal equalprg=rustfmt
 autocmd FileType go setlocal equalprg=gofmt
 
+" https://stackoverflow.com/a/59719162/2422530
+" Needs the installation -> npm -g install js-beautify
+autocmd FileType javascript setlocal equalprg=js-beautify\ -s\ 2\ -
+
 " Setting the formatting for svelte to be same as html
 au! BufNewFile,BufRead *.svelte set ft=html
     
