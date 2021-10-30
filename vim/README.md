@@ -173,7 +173,8 @@ set background=dark
 |3|Apprentice|[→](https://github.com/romainl/Apprentice)|[→](https://github.com/romainl/vim-rnb)|
 |4|Vim Monokai - Based on Sublime|[→](https://github.com/crusoexia/vim-monokai)||
 |5|Photon|[→](https://github.com/axvr/photon.vim)||
-
+|6|Edge|[→](https://github.com/sainnhe/edge)||  
+ 
 
 #### Theme screenshot
 ![image](https://user-images.githubusercontent.com/4998915/113415172-48e53080-93dc-11eb-9a6a-e4771faa1c73.png)
