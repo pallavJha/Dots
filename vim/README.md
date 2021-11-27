@@ -174,6 +174,7 @@ set background=dark
 |4|Vim Monokai - Based on Sublime|[→](https://github.com/crusoexia/vim-monokai)||
 |5|Photon|[→](https://github.com/axvr/photon.vim)||
 |6|Edge|[→](https://github.com/sainnhe/edge)||  
+|7|Sonokai|[→](https://github.com/sainnhe/sonokai)||  
  
 
 #### Theme screenshot
