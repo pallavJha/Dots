@@ -121,15 +121,16 @@ function! HighlightSearch()
   endif
 endfunction
 
-hi User1 guifg=#ffdad8  guibg=#880c0e
-hi User2 guifg=#000000  guibg=#F4905C
-hi User3 guifg=#292b00  guibg=#f4f597
-hi User4 guifg=#112605  guibg=#aefe7B
-hi User5 guifg=#051d00  guibg=#7dcc7d
-hi User7 guifg=#ffffff  guibg=#880c0e gui=bold
-hi User8 guifg=#ffffff  guibg=#5b7fbb
-hi User9 guifg=#ffffff  guibg=#810085
-hi User0 guifg=#ffffff  guibg=#094afe
+hi User1 guifg=#ffdad8  guibg=#880c0e ctermfg=lightblue
+hi User2 guifg=#000000  guibg=#F4905C ctermfg=darkgreen  
+hi User3 guifg=#292b00  guibg=#f4f597 ctermfg=blue  
+hi User4 guifg=#112605  guibg=#aefe7B ctermfg=red  
+hi User5 guifg=#051d00  guibg=#7dcc7d ctermfg=white  
+hi User7 guifg=#ffffff  guibg=#880c0e ctermfg=grey gui=bold
+hi User8 guifg=#ffffff  guibg=#5b7fbb ctermfg=grey 
+hi User9 guifg=#ffffff  guibg=#810085 ctermfg=grey
+hi User0 guifg=#ffffff  guibg=#094afe ctermfg=grey
+
 
 " Status line colors for a Terminal
 " https://vi.stackexchange.com/a/15614
