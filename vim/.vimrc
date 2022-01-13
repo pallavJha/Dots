@@ -17,6 +17,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nmap <C-n><C-n> :NERDTreeToggle<CR>
 nmap <C-n><C-m> :NERDTreeFind<CR>
 
+" Make Ctrl-W a NOP in insert mode
+" https://stackoverflow.com/a/69020234/2422530
+inoremap <c-w> <nop>
 
 " Colorscheme
 colorscheme apprentice 
@@ -75,7 +78,8 @@ endif
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+" let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|(node_modules))$'
 
 " ****************** Closing the vim script copied from https://github.com/kien/ctrlp.vim#basic-options
 
