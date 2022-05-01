@@ -1,4 +1,4 @@
-" Keep this file at ~/.vimrc/statusline.vim
+" Keep this file at ~/.vim/statusline.vim
 
 " https://gist.github.com/meskarune/57b613907ebd1df67eb7bdb83c6e6641
 " Status Line Custom
