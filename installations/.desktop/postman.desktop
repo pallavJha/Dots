@@ -1,0 +1,10 @@
+# Real path ~/.local/share/applications/postman.desktop
+
+[Desktop Entry]
+Version=9.6.1
+Name=Postman
+Exec=/home/waterbottle/installation/postman/Postman/app/Postman
+Icon=/home/waterbottle/installation/postman/Postman/app/icons/icon_128x128.png
+Terminal=false
+Type=Application
+Categories=Utility;Development;
