@@ -18,7 +18,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 ### More info
 
-More documentation is present in the [vim directory](../vim).
+More documentation is present in the [vim directory](../../vim).
 
 ### Script
 
