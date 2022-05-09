@@ -37,17 +37,17 @@ mkdir -p ~/.config/nvim
 mkdir -p ~/.config/nvim/lua
 
 # Copy the init.vim file
-cp nvim/init.lua ~/.config/nvim/init.lua
+cp nvim/lua/init.lua ~/.config/nvim/init.lua
 
 # Copy the statusline.vim file
-cp nvim/lua/statusline.lua ~/.config/nvim/lua/statusline.lua
+cp nvim/lua/lua/statusline.lua ~/.config/nvim/lua/statusline.lua
 
 # Copy the native-autocomplete.vim file
-cp nvim/lua/native-autocomplete.lua ~/.config/nvim/lua/native-autocomplete.lua
+cp nvim/lua/lua/native-autocomplete.lua ~/.config/nvim/lua/native-autocomplete.lua
 
 # Copy the nerdtree.vim file
-cp nvim/lua/nerdtree.lua ~/.config/nvim/lua/nerdtree.lua
+cp nvim/lua/lua/nerdtree.lua ~/.config/nvim/lua/nerdtree.lua
 
 # Copy the ctrlp.vim file
-cp nvim/lua/ctrlp.lua ~/.config/nvim/lua/ctrlp.lua
+cp nvim/lua/lua/ctrlp.lua ~/.config/nvim/lua/ctrlp.lua
 ```
