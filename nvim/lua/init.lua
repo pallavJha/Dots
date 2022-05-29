@@ -97,3 +97,5 @@ vim.call('plug#end')
 
 require('nerdtree')
 require('ctrlp')
+
+require('lsp')
