@@ -54,3 +54,6 @@ cp nvim/lua/lua/ctrlp.lua ~/.config/nvim/lua/ctrlp.lua
 # Copy the lsp.lua file
 cp nvim/lua/lua/lsp.lua ~/.config/nvim/lua/lsp.lua
 ```
+### Screenshot(s)
+
+![image](https://user-images.githubusercontent.com/4998915/170875225-0119b0a7-ae3b-4765-a831-c9360d311c52.png)
