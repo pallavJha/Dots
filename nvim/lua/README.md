@@ -50,4 +50,7 @@ cp nvim/lua/lua/nerdtree.lua ~/.config/nvim/lua/nerdtree.lua
 
 # Copy the ctrlp.vim file
 cp nvim/lua/lua/ctrlp.lua ~/.config/nvim/lua/ctrlp.lua
+
+# Copy the lsp.lua file
+cp nvim/lua/lua/lsp.lua ~/.config/nvim/lua/lsp.lua
 ```
