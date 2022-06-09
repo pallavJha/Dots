@@ -16,3 +16,6 @@ fi
 
 # Combine the history of all the open bash shell
 export PROMPT_COMMAND='history -a'
+
+# Alias for restarting the clipboard process after it stops working
+alias clipboard-restart="pkill -f VBoxClient; VBoxClient --clipboard"
