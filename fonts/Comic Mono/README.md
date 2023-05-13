@@ -17,3 +17,8 @@ https://fonts.google.com/specimen/DM+Mono
 
 
 ###### Source: https://www.codingfont.com/
+
+
+## Intel Mono
+
+https://github.com/intel/intel-one-mono
