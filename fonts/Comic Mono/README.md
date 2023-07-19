@@ -1,6 +1,7 @@
 ## Fonts
 ### Comin Mono Font
 This font is a Monospaced version of Comic Sans.
+
 Source: 
 - https://dtinth.github.io/comic-mono-font/
 
@@ -13,6 +14,7 @@ Source:
 
 ### DM Mono
 - https://fonts.google.com/specimen/DM+Mono
+
 Source:
 - https://www.codingfont.com/
 
