@@ -40,6 +40,10 @@ set autoindent
 set smartindent
 set noswapfile
 
+" Wrapping config
+set textwidth=80
+set colorcolumn=+1
+
 
 " ****************** Starting the vim script copied from https://github.com/neoclide/coc.nvim#example-vim-configuration
 
