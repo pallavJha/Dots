@@ -163,4 +163,18 @@ autocmd FileType javascript setlocal equalprg=js-beautify\ -s\ 2\ -
 
 " Setting the formatting for svelte to be same as html
 au! BufNewFile,BufRead *.svelte set ft=html
+
+" Setting the formatting for the python files
+au BufNewFile,BufRead *.py set tabstop=4
+     \ softtabstop=4
+     \ shiftwidth=4
+     \ textwidth=79
+     \ expandtab
+     \ autoindent
+     \ fileformat=unix
+
+au BufNewFile,BufRead *.js, *.ts, *.html,  *.svelte, *.css, *.scss
+    \ tabstop=2
+    \ softtabstop=2
+    \ shiftwidth=2
     
