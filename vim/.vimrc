@@ -21,6 +21,9 @@ nmap <C-n><C-m> :NERDTreeFind<CR>
 " https://stackoverflow.com/a/69020234/2422530
 inoremap <c-w> <nop>
 
+" For Mac only
+set regexpengine=0
+
 " Colorscheme
 colorscheme apprentice 
 syntax enable
