@@ -75,7 +75,16 @@
             Alacritty
           </a>
         </h4>
-      </td>                
+      </td>
+      <td width=200px>
+        <h4 align="center">
+          <a href="/git">
+            <img height="50" width="50" src="/git/git.svg"/>
+            <br/>
+            Git
+          </a>
+        </h4>
+      </td>
     </tr>
   </tbody>
 </table>
