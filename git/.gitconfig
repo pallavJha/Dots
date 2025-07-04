@@ -3,6 +3,13 @@
   name = Pallav Jha 
 [diff]
     tool = vimdiff
+    algorithm = histogram
+    colorMoved = plain
+    renames = true
+[help]
+    autocorrect = prompt
+[commit]
+    verbose = true
 [blame]
     date = human
     coloring = highlightRecent
