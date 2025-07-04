@@ -1,0 +1,57 @@
+import = [
+    "~/.config/alacritty/themes/themes/gnome_terminal.toml"
+]
+
+[font]
+size = 13.0
+
+[window]
+# Make the Option key send an ESC prefix, i.e. Meta/Alt
+#   • "Both"        – both ⌥ keys become Alt/Meta
+#   • "OnlyLeft"    – keep right-Option for “special” characters (…), ©, etc.
+#   • "OnlyRight"   – mirror image of the above
+option_as_alt = "Both"
+
+# Key bindings for changing tabs with Cmd+Shift+Arrow keys
+[[keyboard.bindings]]
+key = "Right"
+mods = "Command|Shift"
+action = "SelectNextTab"
+
+[[keyboard.bindings]]
+key = "Left"
+mods = "Command|Shift"
+action = "SelectPreviousTab"
+
+
+[[keyboard.bindings]]
+key = "Left"
+mods = "Alt"
+chars = "\u001bb"  # Skip word left
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Alt"
+chars = "\u001bf"  # Skip word right
+
+[[keyboard.bindings]]
+key = "Left"
+mods = "Command"
+chars = "\u001bOH"
+mode = "AppCursor"  # Home
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Command"
+chars = "\u001bOF"
+mode = "AppCursor"  # End
+
+[[keyboard.bindings]]
+key = "Back"
+mods = "Command"
+chars = "\u0015"  # Delete line
+
+[[keyboard.bindings]]
+key = "Back"
+mods = "Alt"
+chars = "\u001b\u007f"  # Delete word
