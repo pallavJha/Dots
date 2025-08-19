@@ -7,6 +7,10 @@ This doc contains the setup steps for MCPs. The intention is to copy commands fr
   # create env
   conda  create --name ddg-mcp python=3.12
 
-  # exec to launch the mcp
+  # exec to launch the MCP server for testing.
+  # claude starts the MCP server after registering
   conda run -n ddg-mcp --no-capture-output python3 /opt/anaconda3/envs/ddg-mcp/bin/duckduckgo-mcp-server
+
+  # Registering the MCP server with claude
+  claude mcp add ddg-mcp -- conda run -n ddg-mcp --no-capture-output python3 /opt/anaconda3/envs/ddg-mcp/bin/duckduckgo-mcp-serve
   ```  
