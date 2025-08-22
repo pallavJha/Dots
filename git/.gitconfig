@@ -1,6 +1,10 @@
 [user]
   email = my@email
   name = Pallav Jha 
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
 [diff]
     tool = vimdiff
     algorithm = histogram
