@@ -1,0 +1,33 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "vim_mode": true,
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "ui_font_size": 12,
+  "buffer_font_size": 12,
+  "buffer_font_family": "Monaco",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "KTRZ Monokai"
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "gutter": {
+    "line_numbers": true,
+    "runnables": false,
+    "breakpoints": false,
+    "folds": false,
+    "min_line_number_digits": 0
+  }
+}
