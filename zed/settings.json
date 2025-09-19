@@ -23,6 +23,9 @@
   "scrollbar": {
     "show": "never"
   },
+  "git": {
+    "inline_blame": null
+  },
   "gutter": {
     "line_numbers": true,
     "runnables": false,
