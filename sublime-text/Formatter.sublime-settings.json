@@ -1,0 +1,23 @@
+{
+    "plguin_url": "https://packagecontrol.io/packages/Formatter",
+    "debug": true,
+    "clear_console": false,
+    "open_console_on_failure": true,
+    "close_console_on_failure": false,
+	"formatters": {
+        "dprint": {
+            "info": "https://github.com/dprint/dprint",
+            "enable": true,
+            "format_on_save": false,
+            "format_on_paste": false,
+            "dir_format": false,
+            "syntaxes": ["json", "js", "jsx", "ts", "tsx", "json", "markdown", "toml"],
+            "executable_path": ["/opt/homebrew/bin/dprint"],
+            "config_path": {
+                "ignore_dotfiles": false,
+                "default": "/Users/pallav/code/dprint/dprint.json"
+            }
+        },
+	}
+	
+}
