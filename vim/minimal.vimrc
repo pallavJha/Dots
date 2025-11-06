@@ -29,7 +29,7 @@ set smartindent
 set noswapfile
 
 " Wrapping config
-set textwidth=80
+set textwidth=120
 set colorcolumn=+1
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
