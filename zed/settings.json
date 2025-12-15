@@ -7,30 +7,43 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "tabs": {},
+  "terminal": {
+    "scrollbar": {
+      "show": "auto"
+    }
+  },
+  "ui_font_family": "IBM Plex Mono",
+  "ui_font_weight": 400.0,
   "vim_mode": true,
   "telemetry": {
     "metrics": false,
     "diagnostics": false
   },
-  "ui_font_size": 12,
-  "buffer_font_size": 12,
+  "ui_font_size": 13.0,
+  "buffer_font_size": 11.0,
   "buffer_font_family": "Monaco",
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "KTRZ Monokai"
+    "dark": "Gentle Dark"
   },
   "scrollbar": {
-    "show": "never"
+    "show": "never",
+    "axes": {
+      "horizontal": true
+    }
   },
   "git": {
-    "inline_blame": null
+    "inline_blame": {
+      "enabled": false
+    }
   },
   "gutter": {
     "line_numbers": true,
     "runnables": false,
     "breakpoints": false,
-    "folds": false,
+    "folds": true,
     "min_line_number_digits": 0
   }
 }
