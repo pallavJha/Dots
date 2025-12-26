@@ -84,8 +84,19 @@ function isPRPage() {
 
 (function() {
 
+    let colorModeInterval = null;
+
     function applyLightMode() {
         document.documentElement.setAttribute('data-color-mode', 'light');
+        clearInterval(colorModeInterval);
+        colorModeInterval = setInterval(() => {
+            const currentColorMode = document.documentElement.getAttribute('data-color-mode');
+            if (currentColorMode !== 'light') {
+                log('applyLightMode', 'applying data-color-mode: light');
+                document.documentElement.setAttribute('data-color-mode', 'light');
+                clearInterval(colorModeInterval);
+            }
+        }, 0.5 * 1000);
     }
 
     // 1) Initial application
