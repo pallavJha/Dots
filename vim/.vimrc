@@ -9,6 +9,7 @@ Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
+" ===== NERDTree Configurations =====
 
 " Uncomment the following line to start NERDTree on enter
 " autocmd vimenter * NERDTree
@@ -23,11 +24,16 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nmap <C-n><C-n> :NERDTreeToggle<CR>
 nmap <C-n><C-m> :NERDTreeFind<CR>
 
+" ===== NERDTree Configurations =====
 
-" fzf.vim specific config
+" ===== fzf.vim Configurations =====
+
 set rtp+=/opt/homebrew/opt/fzf " only for mac silicon
 nnoremap <C-p> :Files<Cr>
 
+" ===== fzf.vim Configurations =====
+
+" ===== Settings =====
 " To get the full path you can add this command
 " https://unix.stackexchange.com/a/111560/176830
 set statusline+=%F
@@ -43,9 +49,6 @@ syntax enable
 set background=dark
 " colorscheme apprentice
 colorscheme retrobox
-
-
-" Settings
 "  Set it to show Line numbers
 se nu
 set incsearch
@@ -63,10 +66,6 @@ set noswapfile
 " set textwidth=80
 " set colorcolumn=+1
 
-
-" ****************** Starting the vim script copied from https://github.com/neoclide/coc.nvim#example-vim-configuration
-
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
 set encoding=utf-8
 
@@ -81,10 +80,14 @@ set nowritebackup
 " let g:airline_theme='dark'
 
 
-
 " Enabling the mouse support
 set mouse=a
 
+" Autocompleting without any plugins
+" Source -> https://www.youtube.com/watch?v=2f8h45YR494
+set complete+=kspell
+set completeopt=menuone,longest
+set shortmess+=c
 
 " Setting the formatting for svelte to be same as html
 au! BufNewFile,BufRead *.svelte set ft=html
@@ -111,3 +114,4 @@ au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 "     autocmd WinEnter,BufEnter * setlocal statusline=%!statusline#active()
 "     autocmd WinLeave,BufLeave * setlocal statusline=%!statusline#inactive()
 " augroup end
+" ===== Settings =====
