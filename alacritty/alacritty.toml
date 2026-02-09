@@ -2,6 +2,11 @@ import = [
     "~/.config/alacritty/themes/themes/gnome_terminal.toml"
 ]
 
+# don't use the bash < 3 because `completion -o nosort` throws
+[shell]
+program = "/opt/homebrew/bin/bash"
+args = ["--login"]
+
 [cursor]
 blink_interval = 500
 [cursor.style]
