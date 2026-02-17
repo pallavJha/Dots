@@ -1,5 +1,6 @@
 import = [
-    "~/.config/alacritty/themes/themes/gnome_terminal.toml"
+#    "~/.config/alacritty/themes/themes/gnome_terminal.toml"
+    "~/.config/alacritty/themes/themes/campbell.toml"
 ]
 
 # don't use the bash < 3 because `completion -o nosort` throws
@@ -8,7 +9,7 @@ program = "/opt/homebrew/bin/bash"
 args = ["--login"]
 
 [cursor]
-blink_interval = 500
+blink_interval = 1000
 [cursor.style]
 shape = "Block"
 blinking = "Always"
@@ -22,6 +23,7 @@ size = 13.0
 #   • "OnlyLeft"    – keep right-Option for “special” characters (…), ©, etc.
 #   • "OnlyRight"   – mirror image of the above
 option_as_alt = "Both"
+dynamic_title = true
 
 # Key bindings for changing tabs with Cmd+Shift+Arrow keys
 [[keyboard.bindings]]
