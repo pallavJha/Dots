@@ -7,7 +7,7 @@ set statusline+=%F
 inoremap <c-w> <nop>
 
 " For Mac only
-set regexpengine=0
+" set regexpengine=0
 
 " Colorscheme
 colorscheme retrobox
@@ -29,8 +29,8 @@ set smartindent
 set noswapfile
 
 " Wrapping config
-set textwidth=120
-set colorcolumn=+1
+" set textwidth=120
+" set colorcolumn=+1
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
