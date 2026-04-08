@@ -7,6 +7,58 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "hover_popover_delay": 1500,
+  "hover_popover_enabled": true,
+  "show_signature_help_after_edits": false,
+  "auto_signature_help": false,
+  "agent_buffer_font_size": 13.0,
+  "ui_font_weight": 400.0,
+  "icon_theme": "JetBrains New UI Icons (Dark)",
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    }
+  },
+  "relative_line_numbers": "disabled",
+  "vim": {
+    "toggle_relative_line_numbers": false
+  },
+  "tab_size": 2,
+  "toolbar": {
+    "code_actions": true,
+    "breadcrumbs": true,
+    "selections_menu": true,
+    "agent_review": false,
+    "quick_actions": true
+  },
+  "show_wrap_guides": true,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 500
+    }
+  },
+  "format_on_save": "off",
+  "selection_highlight": true,
+  "rounded_selection": true,
+  "minimum_contrast_for_highlights": 60.0,
+  "buffer_line_height": "comfortable",
+  "outline_panel": {
+    "folder_icons": true,
+    "file_icons": true,
+    "button": true,
+    "default_width": 300.0
+  },
+  "project_panel": {
+    "sort_mode": "directories_first",
+    "indent_size": 15.0,
+    "entry_spacing": "standard",
+    "hide_gitignore": true,
+    "hide_root": false,
+    "auto_reveal_entries": true,
+    "git_status": true,
+    "folder_icons": true,
+    "file_icons": false
+  },
   "tabs": {},
   "terminal": {
     "scrollbar": {
@@ -14,20 +66,15 @@
     }
   },
   "ui_font_family": "IBM Plex Mono",
-  "ui_font_weight": 400.0,
   "vim_mode": true,
   "telemetry": {
     "metrics": false,
     "diagnostics": false
   },
-  "ui_font_size": 13.0,
+  "ui_font_size": 14.0,
   "buffer_font_size": 11.0,
   "buffer_font_family": "Monaco",
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Gentle Dark"
-  },
+  "theme": "JetBrains Dark",
   "scrollbar": {
     "show": "never",
     "axes": {
@@ -36,7 +83,7 @@
   },
   "git": {
     "inline_blame": {
-      "enabled": false
+      "enabled": true
     }
   },
   "gutter": {
