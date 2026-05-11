@@ -9,8 +9,6 @@
 
 # Development Rules
 
-## TypeScript
-
 ### Use proper types
 Always use explicit types. Do not use `any` or `unknown` unless genuinely required. If `unknown` is needed, narrow the type with a type guard before use.
 
@@ -31,10 +29,11 @@ function process(data: User): string {
 }
 ```
 
+> Add note about JS Doc
+
+
 ### No implicit any
 Do not suppress type errors with `@ts-ignore` or `as any`.
-
-## Code Style
 
 ### Always use braces for control structures
 Never write single-line `if`, `for`, `while`, or other control structures. Always use braces on a new line.
@@ -56,3 +55,6 @@ for (const item of items) {
   processItem(item);
 }
 ```
+
+### Refrain from using complex switch cases
+
