@@ -173,7 +173,7 @@ defer func() {
 return l.allow(ctx, "rate:ip:"+ip, l.cfg.PerIPRateLimit)
 
 // Good
-return l.allow(ctx, "rate:ip:"+ip, l.cfg.PerIPRateLimit)
+return l.allow(ctx, fmt.Sprintf("rate:ip:%s", ip), l.cfg.PerIPRateLimit)
 ```
 
 ### Do not write onliner return statement
