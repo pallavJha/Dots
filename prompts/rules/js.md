@@ -98,6 +98,32 @@ for (const item of items) {
 }
 ```
 
+### Test assertions: assert on event content, not just count or existence
+
+For event-stream tests, a regression guard should be specific about what each event looks like. Vague "exists" or "length >= 1" checks pass even when the shape is wrong; explicit per-field assertions fail fast and tell you exactly what diverged. Import enum-like constants from their source rather than hard-coding string values — the test then fails cleanly if a constant is renamed upstream.
+
+```ts
+// Bad — count + existence only; broken shape would pass
+assert.ok(events.length >= 1);
+assert.ok(events.find((e) => e.type === 'order_paid'));
+
+// Good — explicit fields, named constants, helpful failure messages
+const paid = events.find(
+  (e) => e.type === EventType.OrderPaid && e.orderId === 'ord-42',
+);
+assert.ok(
+  paid,
+  `expected OrderPaid event for ord-42; got: ${JSON.stringify(events)}`,
+);
+assert.equal(paid.currency, Currency.USD);
+assert.equal(typeof paid.amount, 'number');
+assert.ok(paid.amount > 0, `amount must be positive; got: ${JSON.stringify(paid)}`);
+assert.equal(paid.metadata?.gateway, 'stripe');
+```
+
+Consolidate related per-field checks inside a single `it()` rather than splitting into many tiny tests that share the same setup. One comprehensive test is easier to read and faster to run than five tests that each rebuild the same world.
+
+
 ### Refrain from using complex ternary operators
 Use ternaries only for simple value selection. Once the expression becomes nested, mixes multiple concerns, or takes real effort to scan, rewrite it as `if` / `else` so the control flow is obvious.
 
