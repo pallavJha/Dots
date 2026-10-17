@@ -41,7 +41,7 @@
       <td width=200px>
         <h4 align="center">
           <a href="/tmux">
-            <img height="75" width="75" src="https://user-images.githubusercontent.com/4998915/117255498-5708ef80-ae67-11eb-8dd4-2c5e1c77c4a3.png"/>
+            <img height="35" width="75" src="https://user-images.githubusercontent.com/4998915/117255498-5708ef80-ae67-11eb-8dd4-2c5e1c77c4a3.png"/>
             <br/>
             Tmux
           </a>
@@ -50,7 +50,7 @@
       <td width=200px>
         <h4 align="center">
           <a href="/bash">
-            <img height="75" width="75" src="https://user-images.githubusercontent.com/4998915/117255696-946d7d00-ae67-11eb-8d50-a14b816a3a47.png"/>
+            <img height="35" width="75" src="https://user-images.githubusercontent.com/4998915/117255696-946d7d00-ae67-11eb-8d50-a14b816a3a47.png"/>
             <br/>
             Bash
           </a>
@@ -82,6 +82,15 @@
             <img height="50" width="50" src="/git/git.svg"/>
             <br/>
             Git
+          </a>
+        </h4>
+      </td>
+      <td width=200px>
+        <h4 align="center">
+          <a href="/nvim/lua">
+            <img height="50" width="50" src="/nvim/neovim.svg"/>
+            <br/>
+            NeoVim
           </a>
         </h4>
       </td>
