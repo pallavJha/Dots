@@ -34,3 +34,9 @@ vim.pack.add({
 require('treesitter-config')
 require('nerdtree')
 require('fzf-config')
+
+-- Clear Retrobox's reverse attribute so airline's colors display as defined.
+-- vim.cmd('highlight StatusLine gui=NONE cterm=NONE')
+-- vim.cmd('highlight StatusLineNC gui=NONE cterm=NONE')
+
+vim.g.airline_theme = 'minimalist'
