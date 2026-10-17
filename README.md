@@ -5,29 +5,14 @@
 
 <h3 align="center"> .files and config files for i3, vim and whatnot! </h3>
 
-<p align="center">This repository contains the dot files for various plugins or systems that I use. The directory name is the name of the machine on which the dot file is deployed.</span>
+<p align="center">This repository contains the dot files for various plugins or systems that I use.</p>
 
+<h2 align="center">
+  Tools
+</h2>
 <table align = "center">
   <tbody>
     <tr>
-      <td width=200px>
-        <h4 align="center">
-          <a href="/sony-vaio">
-            <img height="25" witdth="25" src="https://user-images.githubusercontent.com/4998915/113819701-84f6f900-972e-11eb-921c-d8e99fad6006.png"/>
-            <br/>
-            Sony Vaio
-          </a>
-        </h4>
-      </td>
-      <td width=200px>
-        <h4 align="center">
-          <a href="/i3">
-            <img height="25" width="25" src="https://user-images.githubusercontent.com/4998915/113819076-a86d7400-972d-11eb-95e2-c54fe124382f.png"/>
-            <br/>
-            Thinkpad e14 2nd Gen
-          </a>
-        </h4>
-      </td>
       <td width=200px>
         <h4 align="center">
            <a href="/vim">
@@ -36,8 +21,6 @@
             For all things Vim</a>
         </h4>
       </td>
-    </tr>
-    <tr>
       <td width=200px>
         <h4 align="center">
           <a href="/tmux">
@@ -56,6 +39,8 @@
           </a>
         </h4>
       </td>
+    </tr>
+    <tr>
       <td width=200px>
         <h4 align="center">
           <a href="/i3">
@@ -65,8 +50,6 @@
           </a>
         </h4>
       </td>                       
-    </tr>
-    <tr>
       <td width=200px>
         <h4 align="center">
           <a href="/alacritty">
@@ -85,12 +68,61 @@
           </a>
         </h4>
       </td>
+    </tr>
+    <tr>
       <td width=200px>
         <h4 align="center">
           <a href="/nvim/lua">
             <img height="50" width="50" src="/nvim/neovim.svg"/>
             <br/>
             NeoVim
+          </a>
+        </h4>
+      </td>
+      <td width=200px>
+        <h4 align="center">
+          <a href="/zed">
+            <img height="50" width="50" src="/zed/zed.png"/>
+            <br/>
+            Zed
+          </a>
+        </h4>
+      </td>
+      <td width=200px>
+        <h4 align="center">
+          <a href="/tampermonkey">
+            <img height="50" width="50" src="/tampermonkey/tampermonkey.svg"/>
+            <br/>
+            Tampermonkey
+          </a>
+        </h4>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h2 align="center">
+  Machines 
+</h2>
+<table align = "center">
+  <tbody>
+    <tr>
+      <td width=200px>
+        <h4 align="center">
+          <a href="/sony-vaio">
+            <img height="25" witdth="25" src="https://user-images.githubusercontent.com/4998915/113819701-84f6f900-972e-11eb-921c-d8e99fad6006.png"/>
+            <br/>
+            Sony Vaio
+          </a>
+        </h4>
+      </td>
+      <td width=200px>
+        <h4 align="center">
+          <a href="/i3">
+            <img height="25" width="25" src="https://user-images.githubusercontent.com/4998915/113819076-a86d7400-972d-11eb-95e2-c54fe124382f.png"/>
+            <br/>
+            Thinkpad e14 2nd Gen
           </a>
         </h4>
       </td>
