@@ -1,59 +1,144 @@
 ## Neovim Documentation
 
+### Table of Contents:
+
+- [Config File Locations](#config-file-locations)
+- [Plugin Manager](#plugin-manager)
+- [NERDTree](#nerdtree)
+- [vim-airline](#vim-airline)
+- [fzf.vim](#fzfvim)
+- [Installation Commands](#installation-commands)
+
 ### Config File Locations:
+
 - `init.lua` -> `~/.config/nvim/init.lua`
-  contains the common configuration for the neovim. The plugin configuration are moved to separate files. For example, `nerdtree.vim` contains the configuration for the NerdTree plugin. 
+  loads the common settings and plugin configuration.
+
+- `lua/minimal.lua` -> `~/.config/nvim/lua/minimal.lua`
+  contains the common settings, native completion and filetype configuration. This has been created from [minimal.nvim](../../vim/minimal.vimrc)
 
 - `lua/nerdtree.lua` -> `~/.config/nvim/lua/nerdtree.lua`
-- `lua/statusline.lua` -> `~/.config/nvim/lua/statusline.lua`
-- `lua/ctrlp.lua` -> `~/.config/nvim/lua/ctrlp.lua`
+- `lua/fzf-config.lua` -> `~/.config/nvim/lua/fzf-config.lua`
 
+### Plugin Manager
 
-### [vim-plug](https://github.com/junegunn/vim-plug)
+- Plugins are managed using Neovim's built-in
+[vim.pack](https://neovim.io/doc/user/pack/#vim.pack). Requires Neovim 0.12 or
+newer and Git.
 
-```bash
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+- The following plugins are used:
+  - [NERDTree](https://github.com/preservim/nerdtree)
+  - [vim-airline](https://github.com/vim-airline/vim-airline) and [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
+  - [fzf](https://github.com/junegunn/fzf) and [fzf.vim](https://github.com/junegunn/fzf.vim)
+
+- Plugins are listed in `init.lua` and installed on the first startup after confirmation.
+- To pin a plugin to a Git tag, set `version`:
+  ```lua
+  {
+    src = 'https://github.com/preservim/nerdtree',
+    version = '7.1.3'
+  }
+  ```
+  The `version` field also accepts a branch or commit hash. Plugins without release tags are pinned to commits.
+
+  - To update plugins after changing their versions in `init.lua`, run:
+  ```vim
+  :lua vim.pack.update()
+  ```
+  - Note: Neovim saves installed revisions in `~/.config/nvim/nvim-pack-lock.json`. Keep this file with the configuration to reproduce the same plugin versions.
+
+### [NERDTree](https://github.com/preservim/nerdtree)
+
+File explorer.
+
+#### Shortcuts
+
+- `<C-n><C-n>`: Toggle NERDTree
+- `<C-n><C-m>`: Find the current file in NERDTree
+- `o`: Open a file or expand a directory
+- `t`: Open a file in a new tab
+- `i`: Open a file in a horizontal split
+- `s`: Open a file in a vertical split
+
+### [vim-airline](https://github.com/vim-airline/vim-airline)
+
+To set a theme, add this to `init.lua`:
+
+```lua
+vim.g.airline_theme = 'dark'
 ```
 
-### More info
+### [fzf.vim](https://github.com/junegunn/fzf.vim)
 
-More documentation is present in the [vim directory](../../vim/).
+Fuzzy finder for files, buffers and search results.
 
-### Script
+#### Installation Steps
+
+Install the `fzf` executable:
 
 ```bash
-set -ex
+# macOS
+brew install fzf
 
-# Install neovim
-sudo apt install neovim curl git
-
-# Install vim-plug
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
-# Create directories
-mkdir -p ~/.config/nvim
-mkdir -p ~/.config/nvim/lua
-
-# Copy the init.vim file
-cp nvim/lua/init.lua ~/.config/nvim/init.lua
-
-# Copy the statusline.vim file
-cp nvim/lua/lua/statusline.lua ~/.config/nvim/lua/statusline.lua
-
-# Copy the native-autocomplete.vim file
-cp nvim/lua/lua/native-autocomplete.lua ~/.config/nvim/lua/native-autocomplete.lua
-
-# Copy the nerdtree.vim file
-cp nvim/lua/lua/nerdtree.lua ~/.config/nvim/lua/nerdtree.lua
-
-# Copy the ctrlp.vim file
-cp nvim/lua/lua/ctrlp.lua ~/.config/nvim/lua/ctrlp.lua
-
-# Copy the lsp.lua file
-cp nvim/lua/lua/lsp.lua ~/.config/nvim/lua/lsp.lua
+# Ubuntu
+sudo apt install fzf
 ```
+
+The `junegunn/fzf` and `junegunn/fzf.vim` plugins are installed using `vim.pack`.
+For searching file contents, install `ripgrep`. For syntax-highlighted previews,
+install `bat`.
+
+#### Shortcuts
+
+- `<C-p>`: Find files in the current directory
+- Type part of a filename to filter the results
+- Use the arrow keys to select a result and press `Enter` to open it
+- `Esc`: Close the finder
+- `<C-t>`: Open in a new tab
+- `<C-x>`: Open in a horizontal split
+- `<C-v>`: Open in a vertical split
+
+#### Commands
+
+|Command|Description|
+|-------|-----------|
+|`:Files`|Find files in the current directory|
+|`:GFiles`|Find Git-tracked files|
+|`:Buffers`|Switch between open buffers|
+|`:History`|Find previously opened files|
+|`:Rg pattern`|Search file contents using ripgrep|
+
+
+### Installation Commands
+
+- Install `neovim`
+  ```bash
+  # Ubuntu
+  sudo apt install neovim curl git fzf
+
+  # MacOS
+  brew install neovim
+  brew install fzf
+  ```
+- `nvim` configuration directories and files related commands
+  ```bash
+  mkdir -p ~/.config/nvim
+  mkdir -p ~/.config/nvim/lua
+  # Copy the init.lua file
+  cp nvim/lua/init.lua ~/.config/nvim/init.lua
+
+  # Copy the minimal settings
+  cp nvim/lua/lua/minimal.lua ~/.config/nvim/lua/minimal.lua
+
+  # Copy the NERDTree configuration
+  cp nvim/lua/lua/nerdtree.lua ~/.config/nvim/lua/nerdtree.lua
+
+  # Copy the fzf key mapping
+  cp nvim/lua/lua/fzf-config.lua ~/.config/nvim/lua/fzf-config.lua
+  ```
+
+- Open `nvim` and confirm the plugin installation.
+
 ### Screenshot(s)
 
 ![image](https://user-images.githubusercontent.com/4998915/170875225-0119b0a7-ae3b-4765-a831-c9360d311c52.png)
