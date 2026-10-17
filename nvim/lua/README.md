@@ -3,7 +3,9 @@
 ### Table of Contents:
 
 - [Config File Locations](#config-file-locations)
+- [Minimal Configuration](#minimal-configuration)
 - [Plugin Manager](#plugin-manager)
+- [nvim-treesitter](#nvim-treesitter)
 - [NERDTree](#nerdtree)
 - [vim-airline](#vim-airline)
 - [fzf.vim](#fzfvim)
@@ -19,6 +21,15 @@
 
 - `lua/nerdtree.lua` -> `~/.config/nvim/lua/nerdtree.lua`
 - `lua/fzf-config.lua` -> `~/.config/nvim/lua/fzf-config.lua`
+- `lua/treesitter-config.lua` -> `~/.config/nvim/lua/treesitter-config.lua`
+
+### Minimal Configuration
+
+`minimal.lua` uses only Neovim's built-in features and bundled Retrobox theme. To use it directly, run:
+
+```bash
+nvim -u path/to/minimal.lua
+```
 
 ### Plugin Manager
 
@@ -27,6 +38,7 @@
 newer and Git.
 
 - The following plugins are used:
+  - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
   - [NERDTree](https://github.com/preservim/nerdtree)
   - [vim-airline](https://github.com/vim-airline/vim-airline) and [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
   - [fzf](https://github.com/junegunn/fzf) and [fzf.vim](https://github.com/junegunn/fzf.vim)
@@ -42,10 +54,47 @@ newer and Git.
   The `version` field also accepts a branch or commit hash. Plugins without release tags are pinned to commits.
 
   - To update plugins after changing their versions in `init.lua`, run:
-  ```vim
-  :lua vim.pack.update()
-  ```
-  - Note: Neovim saves installed revisions in `~/.config/nvim/nvim-pack-lock.json`. Keep this file with the configuration to reproduce the same plugin versions.
+    ```vim
+    :lua vim.pack.update()
+    ```
+  - Note: Neovim saves installed revisions in `~/.config/nvim/nvim-pack-lock.json`.
+
+### [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+
+Syntax highlighting and folding using language parsers.
+Configuration is present in `lua/treesitter-config.lua`.
+
+#### Installation Steps
+
+Requires Neovim 0.12 or newer, `tar`, `curl`, a C compiler and [`tree-sitter-cli`](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md) 0.26.1 or newer.
+
+```bash
+# macOS
+brew install tree-sitter-cli
+
+# C compiler (if not already installed)
+xcode-select --install
+```
+
+After installing the plugin, install the parsers:
+
+```vim
+:TSInstall go javascript typescript tsx rust python html css scss lua bash json toml markdown markdown_inline
+```
+
+After updating `nvim-treesitter`, update its parsers:
+
+```vim
+:TSUpdate
+```
+
+#### Shortcuts
+
+- `za`: Toggle a fold
+- `zo`: Open a fold
+- `zc`: Close a fold
+- `zR`: Open all folds
+- `zM`: Close all folds
 
 ### [NERDTree](https://github.com/preservim/nerdtree)
 
@@ -88,9 +137,23 @@ The `junegunn/fzf` and `junegunn/fzf.vim` plugins are installed using `vim.pack`
 For searching file contents, install `ripgrep`. For syntax-highlighted previews,
 install `bat`.
 
+```bash
+# macOS
+brew install ripgrep
+
+# Ubuntu
+sudo apt install ripgrep
+```
+
+Find in Files searches beneath Neovim's current directory as you type. It
+respects `.gitignore` and `.ignore`, includes hidden files, and skips `.git`,
+`node_modules`, `vendor`, `dist`, `build` and `.venv` directories. Searches match
+literal text, ignoring case unless the query contains uppercase letters.
+
 #### Shortcuts
 
 - `<C-p>`: Find files in the current directory
+- `<C-h>`: Find text in files
 - Type part of a filename to filter the results
 - Use the arrow keys to select a result and press `Enter` to open it
 - `Esc`: Close the finder
@@ -107,6 +170,7 @@ install `bat`.
 |`:Buffers`|Switch between open buffers|
 |`:History`|Find previously opened files|
 |`:Rg pattern`|Search file contents using ripgrep|
+|`:FindInFiles [text]`|Search literal text in files interactively|
 
 
 ### Installation Commands
@@ -119,6 +183,7 @@ install `bat`.
   # MacOS
   brew install neovim
   brew install fzf
+  brew install tree-sitter-cli
   ```
 - `nvim` configuration directories and files related commands
   ```bash
@@ -135,9 +200,13 @@ install `bat`.
 
   # Copy the fzf key mapping
   cp nvim/lua/lua/fzf-config.lua ~/.config/nvim/lua/fzf-config.lua
+
+  # Copy the Tree-sitter configuration
+  cp nvim/lua/lua/treesitter-config.lua ~/.config/nvim/lua/treesitter-config.lua
   ```
 
 - Open `nvim` and confirm the plugin installation.
+- Install the `tree-sitter` parsers.
 
 ### Screenshot(s)
 

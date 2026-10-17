@@ -31,5 +31,6 @@ vim.pack.add({
   },
 })
 
+require('treesitter-config')
 require('nerdtree')
 require('fzf-config')
