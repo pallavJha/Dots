@@ -1,4 +1,9 @@
-## Neovim Documentation
+
+<h2 align="center">
+<img height="25 width="25" src="../neovim.svg"/>
+<br/>
+<a href="/vim">Neovim Documentation</a>
+</h2>
 
 ### Table of Contents:
 
